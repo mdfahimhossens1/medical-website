@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare Hospital — Advanced Healthcare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between flex-wrap gap-1">
+    <div>
+      <i class="bi bi-clock me-1"></i>Sat–Thu: 8:00 AM – 8:00 PM &nbsp;<span class="sep">|</span>
+      <i class="bi bi-telephone me-1"></i><a href="tel:16200">Emergency: 16200</a>
+    </div>
+    <div>
+      <i class="bi bi-envelope me-1"></i><a href="#">info@medicare.com.bd</a>
+      <span class="sep">|</span>
+      <i class="bi bi-geo-alt me-1"></i>Khulna, Bangladesh
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="cross"><i class="bi bi-plus-lg"></i></span>Medi<span>Care</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="#appointment" class="btn-appt nav-link">Book Appointment</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container position-relative">
+    <div class="row align-items-end g-5">
+      <div class="col-lg-6 pb-5 fade-up">
+        <div class="hero-badge"><span class="dot"></span> Bangladesh's Trusted Healthcare</div>
+        <h1 class="hero-title">Your Health Is Our<br/><em>Greatest Priority</em></h1>
+        <p class="hero-desc">World-class medical care with compassion — from routine checkups to complex surgeries, our expert team is here for you 24/7.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#appointment" class="btn-primary-med">Book Appointment</a>
+          <a href="#doctors" class="btn-outline-med">Meet Our Doctors</a>
+        </div>
+        <div class="hero-stat-strip mt-5">
+          <div class="hero-stat-item">
+            <div class="hs-num">200+</div>
+            <div class="hs-label">Specialists</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hs-num">50k+</div>
+            <div class="hs-label">Patients / yr</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hs-num">30+</div>
+            <div class="hs-label">Departments</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hs-num">24/7</div>
+            <div class="hs-label">Emergency</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 fade-up">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&auto=format&fit=crop&q=80" alt="Doctor"/>
+          <div class="hero-float-card card-a">
+            <div class="fc-num">98%</div>
+            <div class="fc-label">Patient Satisfaction</div>
+          </div>
+          <div class="hero-float-card card-b">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+              <i class="bi bi-shield-check" style="color:var(--teal);font-size:1.2rem"></i>
+              <span style="font-weight:700;font-size:0.85rem">ISO Certified</span>
+            </div>
+            <div style="font-size:0.75rem;color:var(--mid)">ISO 9001:2015</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<section id="search-bar" style="padding:0 0 60px">
+  <div class="container">
+    <div class="search-wrap">
+      <h5><i class="bi bi-search me-2"></i>Find a Doctor or Department</h5>
+      <div class="row g-3 align-items-end">
+        <div class="col-md-3">
+          <label class="form-label" style="font-size:0.8rem;font-weight:600;color:var(--mid)">Doctor Name</label>
+          <input type="text" class="form-control" placeholder="Search doctor..."/>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label" style="font-size:0.8rem;font-weight:600;color:var(--mid)">Department</label>
+          <select class="form-select">
+            <option value="">All Departments</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Oncology</option>
+            <option>Gynecology</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label" style="font-size:0.8rem;font-weight:600;color:var(--mid)">Preferred Date</label>
+          <input type="date" class="form-control"/>
+        </div>
+        <div class="col-md-3">
+          <button class="btn-search"><i class="bi bi-search me-2"></i>Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section id="departments">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 fade-up">
+        <div class="sec-label">Medical Specialties</div>
+        <h2 class="sec-title">Our <em>Departments</em></h2>
+        <p class="sec-desc">Comprehensive care across 30+ specialized departments staffed by internationally trained physicians.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-heart-pulse"></i></div>
+          <h5>Cardiology</h5>
+          <p>Heart & vascular diseases</p>
+          <div class="dept-count">18 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-brain"></i></div>
+          <h5>Neurology</h5>
+          <p>Brain & nervous system</p>
+          <div class="dept-count">12 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-person-arms-up"></i></div>
+          <h5>Orthopedics</h5>
+          <p>Bone & joint surgery</p>
+          <div class="dept-count">15 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-emoji-smile"></i></div>
+          <h5>Pediatrics</h5>
+          <p>Child healthcare</p>
+          <div class="dept-count">20 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-eye"></i></div>
+          <h5>Ophthalmology</h5>
+          <p>Eye care & surgery</p>
+          <div class="dept-count">10 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-lungs"></i></div>
+          <h5>Pulmonology</h5>
+          <p>Lung & respiratory</p>
+          <div class="dept-count">8 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-gender-female"></i></div>
+          <h5>Gynecology</h5>
+          <p>Women's health</p>
+          <div class="dept-count">14 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-droplet-half"></i></div>
+          <h5>Oncology</h5>
+          <p>Cancer care & treatment</p>
+          <div class="dept-count">16 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+          <h5>Endocrinology</h5>
+          <p>Hormones & diabetes</p>
+          <div class="dept-count">9 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-activity"></i></div>
+          <h5>Gastro</h5>
+          <p>Digestive system care</p>
+          <div class="dept-count">11 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-ear"></i></div>
+          <h5>ENT</h5>
+          <p>Ear, nose & throat</p>
+          <div class="dept-count">8 Specialists</div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 fade-up">
+        <div class="dept-card">
+          <div class="dept-icon"><i class="bi bi-bandaid"></i></div>
+          <h5>Dermatology</h5>
+          <p>Skin & cosmetic care</p>
+          <div class="dept-count">7 Specialists</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 fade-up">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=700&auto=format&fit=crop&q=80" alt="Hospital"/>
+          <div class="about-badge">
+            <div class="ab-num">25+</div>
+            <div class="ab-txt">Years of<br/>Excellence</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-up">
+        <div class="sec-label">About MediCare</div>
+        <h2 class="sec-title">Committed to <em>Healing</em><br/>& Patient Care</h2>
+        <p class="sec-desc mb-4">Since 1999, MediCare Hospital has been the cornerstone of healthcare in Khulna. We combine cutting-edge medical technology with compassionate, patient-first care to deliver outcomes that matter.</p>
+        <div class="about-feature-row">
+          <div class="af-icon"><i class="bi bi-award"></i></div>
+          <div class="af-text">
+            <h6>Internationally Accredited</h6>
+            <p>JCI accredited hospital meeting the highest global standards of patient safety and care quality.</p>
+          </div>
+        </div>
+        <div class="about-feature-row">
+          <div class="af-icon"><i class="bi bi-microscope"></i></div>
+          <div class="af-text">
+            <h6>Advanced Technology</h6>
+            <p>State-of-the-art MRI, CT, robotic surgery, and AI-assisted diagnostics available on-site.</p>
+          </div>
+        </div>
+        <div class="about-feature-row">
+          <div class="af-icon"><i class="bi bi-people"></i></div>
+          <div class="af-text">
+            <h6>Expert Medical Team</h6>
+            <p>200+ board-certified specialists and 800+ nursing staff committed to your recovery.</p>
+          </div>
+        </div>
+        <div class="about-feature-row">
+          <div class="af-icon"><i class="bi bi-telephone-outbound"></i></div>
+          <div class="af-text">
+            <h6>24/7 Emergency Care</h6>
+            <p>Round-the-clock emergency services with dedicated trauma bays and ICU support.</p>
+          </div>
+        </div>
+        <a href="#appointment" class="btn-primary-med mt-4 d-inline-block">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7 fade-up">
+        <div class="sec-label">Medical Experts</div>
+        <h2 class="sec-title">Meet Our <em>Doctors</em></h2>
+        <p class="sec-desc">Internationally trained, board-certified specialists dedicated to delivering the highest standard of care.</p>
+      </div>
+      <div class="col-lg-5 d-flex align-items-end justify-content-lg-end fade-up">
+        <a href="#" class="btn-outline-med">View All Doctors</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 fade-up">
+        <div class="doctor-card">
+          <div class="doc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&auto=format&fit=crop&q=80" alt="Dr. Karim"/>
+            <div class="doc-specialty"><span>Cardiologist</span></div>
+          </div>
+          <div class="doc-body">
+            <h5>Dr. Ahmed Karim</h5>
+            <div class="doc-deg">MBBS, MD (Cardiology), FRCP</div>
+            <div class="doc-rating">
+              <span class="doc-stars">★★★★★</span>
+              <span style="font-size:0.8rem;color:var(--mid)">4.9 (234 reviews)</span>
+            </div>
+            <div class="doc-actions">
+              <button class="btn-doc">Profile</button>
+              <button class="btn-doc filled">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 fade-up">
+        <div class="doctor-card">
+          <div class="doc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&auto=format&fit=crop&q=80" alt="Dr. Nadia"/>
+            <div class="doc-specialty"><span>Neurologist</span></div>
+          </div>
+          <div class="doc-body">
+            <h5>Dr. Nadia Rahman</h5>
+            <div class="doc-deg">MBBS, MD (Neurology), PhD</div>
+            <div class="doc-rating">
+              <span class="doc-stars">★★★★★</span>
+              <span style="font-size:0.8rem;color:var(--mid)">4.8 (189 reviews)</span>
+            </div>
+            <div class="doc-actions">
+              <button class="btn-doc">Profile</button>
+              <button class="btn-doc filled">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 fade-up">
+        <div class="doctor-card">
+          <div class="doc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&auto=format&fit=crop&q=80" alt="Dr. Rafiq"/>
+            <div class="doc-specialty"><span>Orthopedic Surgeon</span></div>
+          </div>
+          <div class="doc-body">
+            <h5>Dr. Rafiq Islam</h5>
+            <div class="doc-deg">MBBS, MS (Orthopedics)</div>
+            <div class="doc-rating">
+              <span class="doc-stars">★★★★★</span>
+              <span style="font-size:0.8rem;color:var(--mid)">4.9 (312 reviews)</span>
+            </div>
+            <div class="doc-actions">
+              <button class="btn-doc">Profile</button>
+              <button class="btn-doc filled">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 fade-up">
+        <div class="doctor-card">
+          <div class="doc-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&auto=format&fit=crop&q=80" alt="Dr. Sumaiya"/>
+            <div class="doc-specialty"><span>Pediatrician</span></div>
+          </div>
+          <div class="doc-body">
+            <h5>Dr. Sumaiya Haque</h5>
+            <div class="doc-deg">MBBS, DCH, FCPS (Pediatrics)</div>
+            <div class="doc-rating">
+              <span class="doc-stars">★★★★★</span>
+              <span style="font-size:0.8rem;color:var(--mid)">5.0 (278 reviews)</span>
+            </div>
+            <div class="doc-actions">
+              <button class="btn-doc">Profile</button>
+              <button class="btn-doc filled">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col-6 col-lg-3 fade-up">
+        <div class="stat-box">
+          <div class="sn counter" data-target="50000">0+</div>
+          <div class="sl">Patients Treated</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 fade-up">
+        <div class="stat-box">
+          <div class="sn counter" data-target="200">0+</div>
+          <div class="sl">Medical Specialists</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 fade-up">
+        <div class="stat-box">
+          <div class="sn counter" data-target="30">0+</div>
+          <div class="sl">Departments</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 fade-up">
+        <div class="stat-box">
+          <div class="sn counter" data-target="25">0+</div>
+          <div class="sl">Years of Service</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 fade-up">
+        <div class="sec-label">What We Offer</div>
+        <h2 class="sec-title">Our Medical <em>Services</em></h2>
+        <p class="sec-desc">Comprehensive health services under one roof — from diagnostics to complex surgical procedures.</p>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-camera-video"></i></div>
+          <div class="svc-content">
+            <h5>Advanced Diagnostics</h5>
+            <p>MRI, CT Scan, PET Scan, X-Ray, Ultrasound & full lab services available 24/7.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-scissors"></i></div>
+          <div class="svc-content">
+            <h5>Robotic Surgery</h5>
+            <p>Minimally invasive robotic-assisted procedures with faster recovery and less scarring.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-hospital"></i></div>
+          <div class="svc-content">
+            <h5>ICU & Critical Care</h5>
+            <p>State-of-the-art ICU with dedicated intensivists and continuous monitoring.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-phone"></i></div>
+          <div class="svc-content">
+            <h5>Telemedicine</h5>
+            <p>Consult specialist doctors from home via video call, available every day.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-capsule"></i></div>
+          <div class="svc-content">
+            <h5>Pharmacy & Lab</h5>
+            <p>24-hour on-site pharmacy and accredited diagnostic laboratory with rapid results.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-truck"></i></div>
+          <div class="svc-content">
+            <h5>Ambulance Service</h5>
+            <p>Advanced life-support equipped ambulances with GPS tracking and trained paramedics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-heart"></i></div>
+          <div class="svc-content">
+            <h5>Cardiac Care Unit</h5>
+            <p>Dedicated coronary care unit with catheterization lab and heart surgery facilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-person-wheelchair"></i></div>
+          <div class="svc-content">
+            <h5>Physiotherapy</h5>
+            <p>Comprehensive rehabilitation services for post-surgery, injuries, and chronic conditions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="service-row-card">
+          <div class="svc-icon-wrap"><i class="bi bi-droplet"></i></div>
+          <div class="svc-content">
+            <h5>Blood Bank</h5>
+            <p>24-hour blood bank with safe blood storage and transfusion services on-site.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment">
+  <div class="container position-relative">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 fade-up">
+        <div class="sec-label" style="color:rgba(255,255,255,0.6)">Book Now</div>
+        <h2 class="sec-title">Schedule Your<br/><em>Appointment</em></h2>
+        <p class="sec-desc mt-3 mb-5">Quick, easy online booking for any department. Our team will confirm your slot within 30 minutes.</p>
+        <div class="appt-info-item">
+          <div class="ai-icon"><i class="bi bi-clock"></i></div>
+          <div>
+            <h6>Working Hours</h6>
+            <p>Sat – Thu: 8:00 AM – 8:00 PM<br/>Emergency: 24/7</p>
+          </div>
+        </div>
+        <div class="appt-info-item">
+          <div class="ai-icon"><i class="bi bi-telephone"></i></div>
+          <div>
+            <h6>Hotline</h6>
+            <p>+880 1700-000000<br/>Emergency: 16200</p>
+          </div>
+        </div>
+        <div class="appt-info-item">
+          <div class="ai-icon"><i class="bi bi-geo-alt"></i></div>
+          <div>
+            <h6>Location</h6>
+            <p>123 Hospital Road, Khulna 9100<br/>Bangladesh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-up">
+        <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:40px;">
+          <h4 style="color:white;font-size:1.5rem;margin-bottom:28px;">Book an Appointment</h4>
+          <div class="appt-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="Your full name"/>
+              </div>
+              <div class="col-md-6">
+                <label>Phone Number</label>
+                <input type="tel" class="form-control" placeholder="+880 17..."/>
+              </div>
+              <div class="col-md-6">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="you@email.com"/>
+              </div>
+              <div class="col-md-6">
+                <label>Department</label>
+                <select class="form-select">
+                  <option value="">Select Department</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>Orthopedics</option>
+                  <option>Pediatrics</option>
+                  <option>Gynecology</option>
+                  <option>Oncology</option>
+                  <option>ENT</option>
+                  <option>Dermatology</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label>Preferred Date</label>
+                <input type="date" class="form-control"/>
+              </div>
+              <div class="col-md-6">
+                <label>Preferred Time</label>
+                <select class="form-select">
+                  <option value="">Select Time</option>
+                  <option>8:00 AM – 10:00 AM</option>
+                  <option>10:00 AM – 12:00 PM</option>
+                  <option>12:00 PM – 2:00 PM</option>
+                  <option>2:00 PM – 4:00 PM</option>
+                  <option>4:00 PM – 6:00 PM</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label>Symptoms / Notes</label>
+                <textarea class="form-control" rows="3" placeholder="Briefly describe your symptoms..."></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn-white-appt" onclick="this.textContent='✓ Appointment Booked!'; setTimeout(()=>this.textContent='Confirm Appointment',3000)">
+                  Confirm Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALTH PACKAGES -->
+<section id="packages">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="sec-label" style="justify-content:center">Health Checkup Plans</div>
+      <h2 class="sec-title">Choose Your <em>Health Package</em></h2>
+      <p class="sec-desc mx-auto" style="max-width:520px">Preventive healthcare packages designed to detect issues early and keep you at your best.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="pkg-card">
+          <div class="pkg-name">Basic Care</div>
+          <p>Essential health screening for adults</p>
+          <div class="pkg-price"><span class="currency">৳</span>2,500<span class="period">/person</span></div>
+          <hr class="pkg-divider"/>
+          <ul class="pkg-features">
+            <li><i class="bi bi-check-circle-fill"></i>Complete Blood Count (CBC)</li>
+            <li><i class="bi bi-check-circle-fill"></i>Blood Sugar & Lipid Profile</li>
+            <li><i class="bi bi-check-circle-fill"></i>Urine Analysis</li>
+            <li><i class="bi bi-check-circle-fill"></i>Blood Pressure Check</li>
+            <li><i class="bi bi-check-circle-fill"></i>Chest X-Ray</li>
+            <li style="opacity:0.35"><i class="bi bi-x-circle-fill"></i>ECG</li>
+            <li style="opacity:0.35"><i class="bi bi-x-circle-fill"></i>Specialist Consultation</li>
+          </ul>
+          <button class="btn-pkg">Book Package</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="pkg-card popular">
+          <div class="pkg-badge">Most Popular</div>
+          <div class="pkg-name">Comprehensive</div>
+          <p>Full body checkup with specialist review</p>
+          <div class="pkg-price"><span class="currency">৳</span>6,500<span class="period">/person</span></div>
+          <hr class="pkg-divider"/>
+          <ul class="pkg-features">
+            <li><i class="bi bi-check-circle-fill"></i>All Basic Tests Included</li>
+            <li><i class="bi bi-check-circle-fill"></i>ECG & Echocardiogram</li>
+            <li><i class="bi bi-check-circle-fill"></i>Ultrasound (Abdomen)</li>
+            <li><i class="bi bi-check-circle-fill"></i>Thyroid Function Test</li>
+            <li><i class="bi bi-check-circle-fill"></i>Liver & Kidney Function</li>
+            <li><i class="bi bi-check-circle-fill"></i>Specialist Consultation</li>
+            <li><i class="bi bi-check-circle-fill"></i>Diet & Lifestyle Counseling</li>
+          </ul>
+          <button class="btn-pkg">Book Package</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="pkg-card">
+          <div class="pkg-name">Executive</div>
+          <p>Premium full-body with advanced cancer screening</p>
+          <div class="pkg-price"><span class="currency">৳</span>15,000<span class="period">/person</span></div>
+          <hr class="pkg-divider"/>
+          <ul class="pkg-features">
+            <li><i class="bi bi-check-circle-fill"></i>All Comprehensive Tests</li>
+            <li><i class="bi bi-check-circle-fill"></i>MRI / CT Scan</li>
+            <li><i class="bi bi-check-circle-fill"></i>Cancer Markers (PSA, CEA etc.)</li>
+            <li><i class="bi bi-check-circle-fill"></i>Bone Density Scan</li>
+            <li><i class="bi bi-check-circle-fill"></i>Genetic Risk Assessment</li>
+            <li><i class="bi bi-check-circle-fill"></i>Multi-specialist Consultation</li>
+            <li><i class="bi bi-check-circle-fill"></i>Annual Follow-up Plan</li>
+          </ul>
+          <button class="btn-pkg">Book Package</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:white;">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="sec-label" style="justify-content:center">Patient Stories</div>
+      <h2 class="sec-title">What Our <em>Patients Say</em></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 fade-up">
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="stars">★★★★★</div>
+          <p>"The cardiology department at MediCare saved my life. Dr. Ahmed Karim diagnosed my condition quickly and the entire team was incredibly supportive throughout."</p>
+          <div class="tc-client">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop" alt=""/>
+            <div>
+              <div class="tc-name">Kamal Uddin</div>
+              <div class="tc-sub">Cardiac Patient · Khulna</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 fade-up">
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="stars">★★★★★</div>
+          <p>"My daughter received exceptional pediatric care here. Dr. Sumaiya is wonderful with children — patient, kind, and highly skilled. We trust MediCare completely."</p>
+          <div class="tc-client">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop" alt=""/>
+            <div>
+              <div class="tc-name">Farida Begum</div>
+              <div class="tc-sub">Parent · Jessore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 fade-up">
+        <div class="testi-card">
+          <div class="tq">"</div>
+          <div class="stars">★★★★★</div>
+          <p>"I underwent knee replacement surgery here. The robotic surgery was precise, recovery was fast, and the physiotherapy team helped me walk again within weeks."</p>
+          <div class="tc-client">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop" alt=""/>
+            <div>
+              <div class="tc-name">Tarek Hossain</div>
+              <div class="tc-sub">Orthopedic Patient · Dhaka</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7 fade-up">
+        <div class="sec-label">Health & Wellness</div>
+        <h2 class="sec-title">Medical <em>News & Tips</em></h2>
+        <p class="sec-desc">Stay informed with the latest in healthcare, wellness, and medical advances from our expert team.</p>
+      </div>
+      <div class="col-lg-5 d-flex align-items-end justify-content-lg-end fade-up">
+        <a href="#" class="btn-outline-med">View All Articles</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=600&auto=format&fit=crop&q=80" alt="Blog 1"/>
+          </div>
+          <div class="blog-body">
+            <span class="blog-cat">Cardiology</span>
+            <h5>5 Warning Signs of Heart Disease You Shouldn't Ignore</h5>
+            <p>Many heart conditions can be prevented with early detection. Learn the key warning signs that require immediate medical attention.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> March 10, 2025</span>
+              <span><i class="bi bi-person"></i> Dr. Ahmed Karim</span>
+            </div>
+            <a href="#" class="read-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&auto=format&fit=crop&q=80" alt="Blog 2"/>
+          </div>
+          <div class="blog-body">
+            <span class="blog-cat">Diabetes</span>
+            <h5>Managing Type 2 Diabetes with Diet & Lifestyle Changes</h5>
+            <p>Discover evidence-based strategies to control blood sugar, lose weight, and reduce diabetes medication dependence naturally.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Feb 22, 2025</span>
+              <span><i class="bi bi-person"></i> Dr. Nadia Rahman</span>
+            </div>
+            <a href="#" class="read-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 fade-up">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80" alt="Blog 3"/>
+          </div>
+          <div class="blog-body">
+            <span class="blog-cat">Child Health</span>
+            <h5>Childhood Vaccination Schedule: What Every Parent Should Know</h5>
+            <p>A complete guide to the recommended childhood immunization schedule in Bangladesh and why each vaccine matters.</p>
+            <div class="blog-meta">
+              <span><i class="bi bi-calendar3"></i> Jan 15, 2025</span>
+              <span><i class="bi bi-person"></i> Dr. Sumaiya Haque</span>
+            </div>
+            <a href="#" class="read-link">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:var(--light)">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="sec-label" style="justify-content:center">Our Facilities</div>
+      <h2 class="sec-title">Hospital <em>Gallery</em></h2>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gallery-item large">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80" alt="Operating Room"/>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&auto=format&fit=crop&q=80" alt="Consultation"/>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&auto=format&fit=crop&q=80" alt="Lab"/>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=400&auto=format&fit=crop&q=80" alt="Nurses"/>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&auto=format&fit=crop&q=80" alt="MRI"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY -->
+<section id="emergency">
+  <div class="container">
+    <div class="emergency-inner">
+      <div class="emg-icon"><i class="bi bi-hospital"></i></div>
+      <div class="emg-text">
+        <h3>24/7 Emergency Services</h3>
+        <p>Our emergency team is always ready. Don't wait — call immediately.</p>
+      </div>
+      <div class="emg-number">16200<span>Emergency Hotline</span></div>
+      <a href="tel:16200" class="btn-call"><i class="bi bi-telephone-fill me-2"></i>Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-5 fade-up">
+        <div class="sec-label">FAQ</div>
+        <h2 class="sec-title">Frequently Asked <em>Questions</em></h2>
+        <p class="sec-desc mt-3">Have questions? We're here to help. Below are answers to our most common patient inquiries.</p>
+        <a href="#contact" class="btn-primary-med mt-4 d-inline-block">Ask a Question</a>
+      </div>
+      <div class="col-lg-7 fade-up">
+        <div class="accordion" id="faqAcc">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">How do I book an appointment?</button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+              <div class="accordion-body">You can book online via our website form, call our hotline at +880 1700-000000, or visit the hospital reception. Online bookings are confirmed within 30 minutes via SMS.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What documents do I need to bring?</button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+              <div class="accordion-body">Please bring your National ID Card, any previous medical records or prescriptions, and your insurance card if applicable. For follow-up visits, bring your previous MediCare patient card.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Do you accept health insurance?</button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+              <div class="accordion-body">Yes, we accept all major insurance providers in Bangladesh including MetLife, Green Delta, Guardian Life, and government employee insurance (DGHS). Please verify with reception before your appointment.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">What are your visiting hours?</button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+              <div class="accordion-body">General ward visiting hours are 10 AM – 12 PM and 5 PM – 7 PM. ICU visits are restricted to one family member with prior permission from the attending physician.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Is telemedicine available?</button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+              <div class="accordion-body">Yes! We offer telemedicine consultations 7 days a week. Book a video appointment through our website and consult with any of our 200+ specialists from the comfort of your home.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="container">
+    <div class="text-center mb-4 fade-up">
+      <div class="sec-label" style="justify-content:center;color:var(--mid)">Our Partners & Accreditations</div>
+    </div>
+    <div class="row align-items-center justify-content-center fade-up">
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">WHO</span></div></div>
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">JCI</span></div></div>
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">MetLife</span></div></div>
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">DGHS</span></div></div>
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">Green Delta</span></div></div>
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">BMRC</span></div></div>
+      <div class="col-auto"><div class="partner-logo"><span class="partner-name">ISO</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="sec-label" style="justify-content:center">Get in Touch</div>
+      <h2 class="sec-title">Contact <em>Us</em></h2>
+      <p class="sec-desc mx-auto" style="max-width:480px">Have questions or need assistance? Our patient relations team is ready to help.</p>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-4 fade-up">
+        <div class="ci-card">
+          <div class="ci-icon"><i class="bi bi-geo-alt"></i></div>
+          <div>
+            <h6>Address</h6>
+            <p>123 Hospital Road, Khulna 9100, Bangladesh</p>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="ci-icon"><i class="bi bi-telephone"></i></div>
+          <div>
+            <h6>Phone</h6>
+            <p>+880 1700-000000<br/>Emergency: 16200</p>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="ci-icon"><i class="bi bi-envelope"></i></div>
+          <div>
+            <h6>Email</h6>
+            <p>info@medicare.com.bd<br/>appointments@medicare.com.bd</p>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="ci-icon"><i class="bi bi-clock"></i></div>
+          <div>
+            <h6>Hours</h6>
+            <p>Sat–Thu: 8AM–8PM<br/>Emergency: 24/7 all days</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 fade-up">
+        <div class="contact-card">
+          <h5 style="font-family:'DM Sans',sans-serif;font-weight:700;margin-bottom:24px">Send Us a Message</h5>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Your name"/>
+            </div>
+            <div class="col-md-6">
+              <label>Phone</label>
+              <input type="tel" class="form-control" placeholder="+880..."/>
+            </div>
+            <div class="col-md-6">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="you@email.com"/>
+            </div>
+            <div class="col-md-6">
+              <label>Subject</label>
+              <select class="form-select">
+                <option value="">Select Subject</option>
+                <option>Appointment Query</option>
+                <option>Test Results</option>
+                <option>Billing</option>
+                <option>Feedback</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label>Message</label>
+              <textarea class="form-control" rows="4" placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn-contact" onclick="this.textContent='✓ Message Sent!';this.style.background='#0A7C6E';setTimeout(()=>{this.textContent='Send Message';this.style.background='';},3000)">
+                Send Message &nbsp;<i class="bi bi-send"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div style="line-height:0">
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=89.5,22.8,89.6,22.9&layer=mapnik" width="100%" height="300" style="border:0;filter:sepia(0.2) saturate(1.3)" loading="lazy"></iframe>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand"><span class="cross" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--teal);color:white;font-size:1rem;border-radius:4px;margin-right:8px;vertical-align:middle"><i class="bi bi-plus-lg"></i></span>Medi<span>Care</span></div>
+        <p class="footer-desc">Bangladesh's most trusted hospital since 1999. Delivering compassionate, world-class healthcare to every patient.</p>
+        <div class="footer-social mt-4">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="footer-heading">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Our Doctors</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Health Packages</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <div class="footer-heading">Departments</div>
+        <ul class="footer-links">
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Oncology</a></li>
+          <li><a href="#">Gynecology</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-heading">Newsletter</div>
+        <p style="color:rgba(255,255,255,0.45);font-size:0.87rem;margin-bottom:16px">Subscribe for health tips, news, and appointment reminders.</p>
+        <div class="d-flex">
+          <input type="email" class="form-control" placeholder="Your email" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);color:white;border-radius:0;padding:12px 16px;"/>
+          <button style="background:var(--teal);border:none;padding:0 18px;color:white;font-size:1rem;flex-shrink:0;"><i class="bi bi-send"></i></button>
+        </div>
+        <div class="mt-4">
+          <div class="footer-heading" style="font-size:0.82rem;margin-bottom:10px">Accreditations</div>
+          <div class="d-flex flex-wrap gap-2">
+            <span style="border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);font-size:0.72rem;padding:4px 12px;border-radius:100px">JCI Accredited</span>
+            <span style="border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);font-size:0.72rem;padding:4px 12px;border-radius:100px">ISO 9001:2015</span>
+            <span style="border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);font-size:0.72rem;padding:4px 12px;border-radius:100px">DGHS Approved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-6"><p>© 2025 Developed Fahim. All rights reserved.</p></div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" style="color:rgba(255,255,255,0.3);text-decoration:none;margin:0 8px;font-size:0.8rem" onmouseover="this.style.color='#0D9E8C'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Privacy Policy</a>
+          <a href="#" style="color:rgba(255,255,255,0.3);text-decoration:none;margin:0 8px;font-size:0.8rem" onmouseover="this.style.color='#0D9E8C'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Terms</a>
+          <a href="#" style="color:rgba(255,255,255,0.3);text-decoration:none;margin:0 8px;font-size:0.8rem" onmouseover="this.style.color='#0D9E8C'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="bi bi-chevron-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
